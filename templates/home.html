@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LC Prediction!!</title>
+    <style>
+        body{
+        background-image: url("{%static 'images/lung-cancer-image.jpg' %}");
+        background-size: cover;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            font-size: 25px;
+            letter-spacing: 1px;
+         }
+         li{
+            float: right;
+         }
+         li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+         }
+         li a:hover{
+            background-color: #111;
+         }
+        li a:active{
+            background-color: rgb(20, 48, 204);
+         }
+         h2{
+            color: red;
+            text-shadow: 4px 2px 5px red;
+            font-size: 50px;
+          }
+          p{
+          color: white;
+          font-size:30px;
+          }
+          p2{
+          color: white;
+          font-size: 100px;
+          }
+          tit{
+          color: white;
+          }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="signup">Create an Account</a></li>
+    <li><a class="active" href="signin">SignIn</a></li>
+    <li style="float:left"><a href=""><tit><b><i>LC Cancer Prediction</i></b></tit></a></li>
+</ul>
+    <h2>Get to know about ur health</h2>
+    <p>Smarter Easier to predict Lung Cancer<br>With the symptoms, we predict the cancer</p>
+    <h2>With Accuraccy<br></h2>
+    <p2>"97.6%"</p2>
+</body>
+</html>
